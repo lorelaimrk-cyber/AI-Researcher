@@ -32,7 +32,8 @@ The full checklist lives in [WEEKLY-WORKFLOW.md](WEEKLY-WORKFLOW.md). In short:
 1. Run `python scripts/gather.py`. It writes a dated brief into `sources/briefs/`.
 2. Open Claude in this repo and say "go". Claude runs the prompt chain in `prompts/`:
    research, angle, draft, edit and fact check, headline and social.
-3. You edit the draft, publish on Substack, and post the two LinkedIn variants.
+3. You edit the draft, then run a final independent Sonnet review pass over it.
+4. You publish on Substack and post the two LinkedIn variants.
 
 About thirty minutes of your time for a finished issue.
 
@@ -40,7 +41,7 @@ About thirty minutes of your time for a finished issue.
 
 ```
 docs/         positioning, voice rules, pillars, calendar, distribution, metrics
-prompts/      the five-step chain Claude runs each week
+prompts/      the chain Claude runs each week, ending in an independent Sonnet review
 templates/    the article skeleton, the brief shape, the predictions ledger
 sources/      sources.yaml (what to track) and briefs/ (what gather.py produces)
 scripts/      gather.py and its requirements

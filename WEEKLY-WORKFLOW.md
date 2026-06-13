@@ -48,7 +48,16 @@ separates you from every other AI newsletter.
 Then run the pre-publish checklist at the bottom of `docs/style-guide.md`. It takes two
 minutes and it is not optional.
 
-## Step 4: Publish and distribute (5 minutes)
+## Step 4: Final review (a fresh Sonnet pass)
+
+Run `prompts/06-final-review.md`. It launches a new Sonnet agent that reads the finished issue
+cold, with none of the context from drafting it, and checks that it holds together, stays on
+thesis, sources every claim, clears the bans, and passes the pre-publish checklist, then gives
+a ship or hold verdict. The agent reports only. You decide what to change before publishing.
+
+This runs on the version you have already made yours, so the reviewer sees what the reader will.
+
+## Step 5: Publish and distribute (5 minutes)
 
 1. Paste the article into Substack. Use the title, subtitle, and email subject from step 5.
 2. Publish.
@@ -56,7 +65,7 @@ minutes and it is not optional.
    LinkedIn, so this step matters as much as the article itself. See
    [docs/distribution.md](docs/distribution.md).
 
-## Step 5: Log the call
+## Step 6: Log the call
 
 If the issue made a prediction, add it to `templates/predictions-ledger.md` with today's
 date. Every quarter you grade the open calls in public. That track record is your moat.
