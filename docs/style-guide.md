@@ -118,6 +118,40 @@ a plain statement. The reasoning reads like Dalio. The words are yours.
 - Name names. Real firms, real numbers, real projects. Specificity is trust.
 - Prefer the active voice and the present tense.
 
+## Additional bans (added 2026-07-18)
+
+These extend the hard bans above. Same rule: check before every publish.
+
+**Formatting.** No emoji bullets. No random mid-paragraph bolding for emphasis (bold labels at
+the start of a list item or scenario are fine). No Unicode decorations (arrows, multiplication
+signs, fancy bold text).
+
+**More banned vocabulary.** Verbs: harness, unleash, foster, elevate, streamline, reimagine,
+empower, transcend, underscore, unravel, illuminate, embark, embrace, showcase. Adjectives:
+robust, seamless, pivotal, multifaceted, nuanced, groundbreaking, cutting-edge, transformative,
+holistic, vibrant, meticulous, intricate, profound, paramount, invaluable, comprehensive,
+tirelessly, relentlessly. Nouns: realm, paradigm, synergy, ecosystem (metaphorical), journey,
+beacon, testament, cornerstone.
+
+**More banned phrases.** "Here's the thing" / "here's the kicker" / "here's where it gets
+interesting" and any manufactured-suspense setup. "Let's unpack" / "let's break this down."
+"Think of it as" / "imagine a world where." "Importantly" / "interestingly" / "notably."
+"Whether you're a ... or a ..." "Not X. Not Y. Just Z." "The X? A Y." (self-posed rhetorical
+question answered immediately). "Serves as" / "stands as" / "marks a" when "is" works. "Most
+people don't know this, but." Simulated vulnerability ("I'll be honest," "can we talk about").
+
+**Structure.** No fractal summaries (opening summary, body, closing summary all restating the
+same thing). No one-point dilution (the same argument restated through several metaphors). No
+"firstly, secondly, thirdly" disguised as prose. No trailing "-ing" filler clauses
+("highlighting the importance of," "reflecting broader trends"). No invented concept labels
+that sound analytical but mean nothing ("the supervision paradox"). No stacking of historical
+analogies or company names for false authority: one analogy, carried properly.
+
+**Tone.** Write like a knowledgeable peer. Use contractions naturally (it's, don't, we're);
+overly formal reads as machine. Make a point once, with conviction, instead of hedging it three
+ways. Reserve strong adjectives for things that warrant them. No dramatic reveals for mundane
+information. No patronizing beginner analogies.
+
 ## Pre-publish checklist (the one screen that matters)
 
 Run this on every draft. It takes two minutes.

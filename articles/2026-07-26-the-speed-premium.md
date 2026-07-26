@@ -1,0 +1,69 @@
+---
+date: 2026-07-26
+pillar: economics
+title: "The Speed Premium"
+audience: essay
+---
+
+# The Speed Premium
+
+New numbers from McKinsey put a real price on how much a shorter schedule is worth, and on who currently keeps that money.
+
+AI is compressing how long engineering delivery takes. Right now the client keeps almost all of the value created when that happens. The firms that reprice around the days they pull forward, instead of the hours it took to pull them forward, get to keep a share of a pool of value that recent case studies put in the tens of millions of pounds per project.
+
+## The signal
+
+Three pieces of the same story landed within a few weeks of each other this month. McKinsey published "How AI is reshaping the future of the AEC industry" on July 15, 2026, arguing that AI can automate 50 percent of nonphysical work in architecture and engineering and 39 percent in construction, across 150 workflows in 25 domains ([Construction Dive](https://www.constructiondive.com/news/ai-report-construction-mckinsey-engineering-build-buy/825927/)). The line that matters most for this issue sits inside that report: firms that control their own project data and "the ability to charge for outcomes rather than work processes will see benefits."
+
+A week earlier, McKinsey's Capital Excellence Practice and its scheduling partner ALICE Technologies published case studies from clients running generative scheduling, software that models thousands of possible sequences through a project instead of trusting a single baseline plan ([ALICE Technologies](https://blog.alicetechnologies.com/news/how-using-al-saved-time-and-millions-across-three-big-capital-projects)). Daniel Ahmoye, a McKinsey partner, told Construction Dive that as the tools spread, "advantage is going to come from those who can redesign their work, their roles, how they operate, how they think about commercial models the fastest." He also cautioned that today's productivity gains are "likely soon to be table stakes." The window to charge for this will not stay open on its own.
+
+## The evidence
+
+Here is what the generative scheduling case studies found.
+
+![Three capital projects using generative scheduling: a port expansion, an electronics plant, and a transit guideway, each showing the schedule move and the pounds of client value it produced.](../assets/speed-premium-evidence.png)
+
+A port expansion project ran more than 15 percent ahead of its original schedule. That produced £60 million in revenue booked earlier plus £15 million in lower labor cost from better use of crews, a combined £75 million. An electronics manufacturer, three months behind on a facility with more than 1,000 pieces of equipment to install, pulled six weeks back and captured over £37 million in combined savings and earlier revenue. An engineering, procurement, and construction firm building an elevated transit guideway recovered thirteen months of delay and worked out of £60 million of exposure it had already flagged. Across more than 35 clients in infrastructure, data centers, energy, mining, and manufacturing, McKinsey and ALICE report schedule accelerations of up to 20 percent.
+
+None of those figures are fees. They are what the client captured. Under a time and materials contract, a firm that pulls a schedule forward bills fewer hours for the exact outcome the client values most. Speed, under the old pricing model, quietly shrinks a firm's own invoice.
+
+## The two tests
+
+A firm that wants a share of that value, rather than handing it to the client for free, has two questions to answer honestly.
+
+![The speed premium: the value test asks whether the client's gain from a week saved is large next to the fee premium being asked, and the proof test asks whether the firm can name and stand behind the specific number of weeks it will pull forward.](../assets/speed-premium-framework.png)
+
+The value test asks whether the client's gain from a week saved, in revenue booked early plus cost avoided, is large next to the fee premium being proposed. On the port project, a fee that moved by even two or three percent of the £75 million pool is still a rounding error to the client and a meaningful number to the firm. Most engineering fee schedules were never built with a figure like that in the room.
+
+The proof test asks whether the firm can name the specific number of weeks it will pull forward and stand behind it, rather than promise a general improvement. That is the harder bar, and it is the one generative scheduling tools exist to clear. Modeling thousands of paths through a project and comparing them against the baseline turns "we will be faster" into a specific, checkable figure a client can hold a firm to.
+
+I am fairly confident the value test passes on most large capital projects, since the case studies above are not outliers. McKinsey and ALICE chose them as representative of the client base. I am less confident that procurement processes at AEC clients, many of them public agencies or regulated utilities, will accept a schedule linked fee structure quickly. Contract templates change slower than the technology does.
+
+## Where it fails
+
+Both tests can fail on their own terms. A school, a community facility, or any asset with low revenue per day of operation passes almost nothing through the value test, since there is little client value to share regardless of how fast the design comes together. And a firm without its own scheduling analytics, asking for a premium on general confidence rather than a modeled number, is asking a client to pay for a story a competitor could tell just as convincingly. That is where a fee attached to speed reads as opportunistic rather than earned, and a sophisticated client notices the difference.
+
+[YOUR DETAIL HERE]
+
+## The throughline
+
+> A schedule a firm can quantify and defend is worth pricing on its own terms. A schedule a firm can only promise to improve is still billed by the hour, and every hour AI removes from that bill is an hour of revenue handed back to the client for nothing in return.
+
+## A prediction
+
+> Prediction (2026-07-26): Within two years, at least one top ten global engineering, construction, or capital projects consultancy will publicly market a named fee structure with a schedule acceleration bonus or penalty, tied to a modeled baseline, as a standard commercial offer rather than a one off case study. Confidence: medium.
+
+## What I'm watching
+
+Whether McKinsey's own Capital Excellence Practice, or a competitor chasing the same clients, turns generative scheduling into a formally priced product line rather than a set of case studies attached to consulting engagements. And whether any AEC firm outside the McKinsey and ALICE partnership publishes its own schedule linked fee structure first, since that would be the clearest signal the value test has started working in the market rather than only on paper.
+
+---
+
+<!--
+Author note, delete before publishing:
+- Replace [YOUR DETAIL HERE] with a specific memory: a project where a faster schedule saved the client real money and the firm still billed the same hourly fee, or a client conversation where speed came up in a fee negotiation.
+- Run the pre-publish checklist in docs/style-guide.md.
+- Currency note: the McKinsey/ALICE case study figures (£75m, £37m, £60m) are reported in pounds sterling in the source; left as published rather than converted.
+- Framework images generated at assets/speed-premium-evidence.png and assets/speed-premium-framework.png via scripts/make_speed_evidence.py and scripts/make_speed_framework.py, same palette as the tokenomics and IP matrix assets.
+- Copy the prediction into templates/predictions-ledger.md the day this publishes.
+-->
