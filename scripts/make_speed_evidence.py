@@ -16,8 +16,8 @@ ax.set_xlim(0, 14.4)
 ax.set_ylim(0, 7.9)
 ax.axis("off")
 
-ax.text(0.55, 7.35, "What schedule acceleration is already worth", fontsize=24, fontweight="bold", color=INK, family="DejaVu Sans")
-ax.text(0.55, 6.92, "Three capital projects using generative scheduling. The fee for the work is a rounding error against this.", fontsize=13, color=GRAY, family="DejaVu Sans")
+ax.text(0.55, 7.35, "One partnership's numbers, in cash terms", fontsize=24, fontweight="bold", color=INK, family="DejaVu Sans")
+ax.text(0.55, 6.92, "Three McKinsey and ALICE Technologies case studies. The fee for the work is a rounding error against this.", fontsize=13, color=GRAY, family="DejaVu Sans")
 
 card_w = 4.2
 card_h = 4.7
@@ -45,7 +45,7 @@ cards = [
         "metric": "13 months",
         "metric_label": "delay recovered",
         "value": "£60m",
-        "value_label": "in identified risk\nde-risked",
+        "value_label": "in flagged risk,\nworked out of the plan",
     },
 ]
 
