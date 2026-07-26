@@ -69,6 +69,7 @@ Author note, delete before publishing:
 - Run the pre-publish checklist in docs/style-guide.md.
 - Currency note: the McKinsey/ALICE case study figures (£75m, £37m, £60m) are reported in pounds sterling in the source; left as published rather than converted.
 - Sourcing note: the piece leans on three independent legs, not just McKinsey: Flyvbjerg's Oxford megaproject research, nPlan's own AACE technical paper, and the McKinsey/ALICE case studies plus McKinsey's July AEC report for the pricing quote. Verified all four primary links directly (fetched full text, not just search summaries).
+- This is the "sharper" register. A plainer, shorter-sentence version of the same piece is saved at articles/2026-07-26-the-speed-premium-simple.md for comparison.
 - Framework images generated at assets/speed-premium-evidence.png and assets/speed-premium-framework.png via scripts/make_speed_evidence.py and scripts/make_speed_framework.py, same palette as the tokenomics and IP matrix assets.
 - Copy the prediction into templates/predictions-ledger.md the day this publishes.
 -->
