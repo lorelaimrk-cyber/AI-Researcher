@@ -7,101 +7,102 @@ prediction_logged: no
 
 # AI Seats Are Becoming the New Billable Hour
 
-Half the staff at a typical AEC or consulting firm never open the AI tool they were given.
-The other half burns through the monthly quota like it proves something, and neither number
-tells a partner anything about the work.
+Half the staff at a typical AEC or consulting firm never open the AI tool they were given. A
+smaller group treats the monthly token quota like a scoreboard. Neither number tells a partner
+whether the work got better.
 
 ## The claim
 
-A firm that buys AI seats and only watches who logs in is buying a new version of the old
-billable hour problem. Counting who is present says nothing about whether the work got
-better, and a firm that confuses the two will end up managing AI exactly as badly as it
-managed junior hours for the last twenty years.
+David Maister spent thirty years telling professional service firms the same thing: once
+utilization covers its cost, more hours logged stop making a firm more profitable, and the only
+lever left is the value each hour produces. Firms buying AI seats are running the identical
+trade without knowing it. A seat that gets opened every day is not the same fact as a
+deliverable that got better, and most firms are only tracking the one that is easy to count.
 
 ## What happened
 
-Microsoft has disclosed more than 100 million monthly Copilot users and licenses across 70
-percent of the Fortune 500. A 2026 enterprise adoption analysis by
-[ValueAdd VC](https://valueaddvc.com/blog/microsoft-copilot-enterprise-adoption-what-the-data-shows-about-real-usage-vs-hype),
-drawing on Gartner and Forrester survey data, puts weekly active use at 20 to 30 percent of
-purchased seats, with daily use often under 40 percent even at firms that committed to
-enterprise wide rollouts. The gap traces to unclear use cases, governance rules on what data
-can go into the tool, thin training, and output that still needs heavy editing before anyone
-can use it.
+Microsoft and LinkedIn's 2024 Work Trend Index found that 78 percent of AI users bring their
+own AI tools to work rather than wait for an employer rollout, rising to 85 percent among Gen Z
+employees ([Microsoft WorkLab](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part)).
+The tool shows up in a person's workflow long before it shows up on a firm's licensing
+spreadsheet. By the time the firm buys an official seat, adoption already looks uneven: some
+people have been running the tool for a year, others are opening it for the first time because
+IT sent a reminder email.
 
-At the other end of the same market,
-[IntuitionLabs documented](https://intuitionlabs.ai/articles/token-optimization-chatgpt-claude-costs)
-the opposite disease. Developer Harika Yenuga burned through 200,000 tokens in twenty minutes
-before she rebuilt her workflow and cut consumption by 70 percent. A six person team at
-Branch8 ran a monthly bill of 2,400 dollars before optimizing it down to 680. One Claude Max
-subscriber, writing under the name Concessao, used roughly 10 billion tokens over eight
-months, work that would run about 15,000 dollars at list API pricing on a flat plan that cost
-800 dollars for the year. The same report cites OpenAI's own disclosed volume: 78.3 billion
-tokens processed by ChatGPT in a single day in September 2025, at an estimated 17 billion
-dollars a year in infrastructure cost.
+The opposite pattern shows up further along the same curve. IntuitionLabs tracked a developer
+named Harika Yenuga who burned through 200,000 tokens in twenty minutes on a single session,
+then rebuilt her workflow and cut that consumption by 70 percent once she looked at what the
+task actually needed
+([IntuitionLabs](https://intuitionlabs.ai/articles/token-optimization-chatgpt-claude-costs)).
+One group has not started. The other started, found the tool genuinely useful, and kept scaling
+the same habit past the point where more tokens bought more value.
 
 ## Why it matters to a firm like yours
 
-Treat the firm as a machine: inputs, people, a feedback loop, and outputs. Right now the input
-is a purchased seat, priced the same whether the person behind it opens the tool once a
-quarter or runs it all day. The people split into two groups with almost no overlap: the ones
-who do not know what the higher tier actually gets them, and the ones who treat exhausting the
-quota as a form of productivity theater. The feedback loop that would connect either behavior
-to an outcome, a faster deliverable, fewer errors, a better margin on a project, does not exist
-yet at most firms. So the number that gets measured is activation, not value. [YOUR DETAIL
-HERE]
+Treat the firm as a machine: inputs, people, a feedback loop, outputs. The input is a seat,
+priced the same whether it gets opened once a quarter or runs all day. Maister's own formula for
+a professional firm's profit runs on margin, rate, utilization, and leverage, and his argument
+was never that more utilization is automatically good. Past a certain point, activation just
+tells a partner that people are busy. It does not tell them the firm earns more per hour of that
+busyness. An AI seat inherits the same ceiling. A high activation number says the tool got
+opened. Nothing in that number says whether the output needed less editing before a partner
+could send it, or whether the project shipped with fewer errors. [YOUR DETAIL HERE]
 
-That is the same failure mode that shaped the billable hour for decades. A logged hour told a
-partner someone was present. It never told them the client got a better report. A logged token
-tells the same half truth with cleaner math behind it.
+Economist Charles Goodhart made the underlying point in 1975, writing about monetary policy: a
+statistical regularity tends to collapse once it becomes a target of control
+([Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law)). The line everyone actually
+quotes, "when a measure becomes a target, it ceases to be a good measure," was coined later by
+the anthropologist Marilyn Strathern, not by Goodhart himself, but the mechanism is his. Track
+seat logins as the success metric, and a firm will get more seat logins. It has no built in
+reason to also get better work.
 
 ## The benefit case
 
-A firm that pairs usage data with an actual outcome, hours saved on a specific deliverable
-type, error rate on a drawing package, margin on a fixed price job, gets two things at once.
-It closes the awareness gap for the quiet majority by showing them exactly which task the
-heavy users found worth the tokens. And it turns the token heavy group from a cost line into a
-source of playbooks, because the people who ran a workflow enough times to burn 10 billion
-tokens over eight months have already found what works and what does not. Their habits are
-free research, if anyone bothers to ask them what they were doing.
+A firm that measures the outcome instead of the login gets two different populations to learn
+from. The quiet majority who never opened the tool can be shown, concretely, what a Yenuga level
+user found worth the effort, rather than told in the abstract that AI helps. The heavy users
+stop being a cost line to manage down. They become a source of technique instead, since someone
+who ran a workflow enough times to cut their own token spend by 70 percent has already done the
+optimization work a firm would otherwise pay a consultant to redo.
 
 ## The risk case
 
-I am fairly confident most firms already have a dashboard somewhere that shows seat
-activation. I do not yet know of one that has connected that number to rework rate or project
-margin. Left alone, a rising average token count just as easily means more drafts a partner
-still has to fix, not less total work. A firm that rewards high usage on its own will get more
-usage, the same way a firm that rewarded logged hours got more hours logged, with no guarantee
-either curve bends toward better client work. The Branch8 and Concessao numbers cut both ways:
-they could be evidence of a workflow worth copying firm wide, or evidence of a habit nobody
-has checked against what it actually produced.
+I hold this loosely, because the right amount of measurement depends on how mature the rollout
+already is. Watching outcomes instead of logins takes real infrastructure: a way to tie a
+specific AI assisted task to a specific deliverable's error rate or margin, and most firms have
+not built that yet. Build it too early or too heavily, and a firm can slow down a rollout that
+would have found its own value faster left alone. What I trust without much reservation is
+Maister's underlying claim, tested across decades of professional service firms: a metric that
+stops at activity, whether that activity is billable hours or token counts, keeps getting more
+activity and nothing else.
 
 ## The throughline
 
-> An activated seat and a better deliverable are two separate facts, and most firms are only
-> measuring the one that is easy to count.
+> An opened seat and a better deliverable are two separate facts, and a firm that only tracks
+> the first one is pricing AI the same way it priced the billable hour.
 
 ## A prediction
 
-> Prediction (2026-08-01): By the end of 2027, at least one major AEC or management
-> consulting firm will publicly report tying its AI usage data to project margin or rework
-> rate, rather than seat activation alone. Confidence: medium.
+> Prediction (2026-08-01): By the end of 2027, at least one major AEC or consulting firm will
+> publicly report an AI adoption metric tied to project margin or rework rate, rather than seat
+> activation or token volume alone. Confidence: medium.
 
 ## What I am watching next
 
-Whether the vendors move first. Microsoft, Anthropic, and OpenAI currently sell dashboards
-built around logins and token counts because those are the numbers their own billing systems
-already produce. The first one to sell a report tied to hours saved or errors avoided, rather
-than seats touched, changes what every buyer on this list starts asking for. I am also
-watching whether any firm quietly drops seats for its quiet majority and reallocates that
-budget toward training instead, which would be the tell that someone finally did the math.
+Whether any vendor sells a report built around hours saved or errors avoided instead of logins
+and tokens. That is currently the easiest number for Microsoft, Anthropic, and OpenAI to produce
+from their own billing systems, not necessarily the most useful one for a buyer. I am also
+watching whether firms start treating their heaviest AI users the way good firms already treat
+their most efficient timekeepers, as a source of technique to copy, rather than a number to
+explain in a budget meeting.
 
 ---
 
 <!--
 Author note, delete before publishing:
 - Add one specific detail only Lorela would know where [YOUR DETAIL HERE] sits above.
-- Sourcing note: the 20 to 30 percent weekly-use figure traces to ValueAdd VC's compilation of
-  Gartner and Forrester survey data, not a named primary report; flagged in the fact-check pass.
+- Maister's profitability formula and billable hour critique are drawn from a secondary summary
+  of "Managing the Professional Service Firm" (https://tylerdevries.com/book-summaries/managing-the-professional-service-firm/),
+  not the original text directly; flag this if it matters for the final review pass.
 - Run the pre-publish checklist in docs/style-guide.md before shipping.
 -->
