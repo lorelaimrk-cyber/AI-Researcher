@@ -8,7 +8,6 @@ GRAY = "#6B6F66"
 GREEN = "#2F6B47"
 GREEN_DARK = "#1F4E33"
 BORDER = "#D9D4C6"
-RED = "#B23A2E"
 
 fig, ax = plt.subplots(figsize=(14.4, 8.8), dpi=150)
 fig.patch.set_facecolor(BG)
@@ -17,8 +16,8 @@ ax.set_xlim(0, 14.4)
 ax.set_ylim(0.6, 9.2)
 ax.axis("off")
 
-ax.text(0.55, 8.65, "Are you buying activation, or are you buying value?", fontsize=25, fontweight="bold", color=INK, family="DejaVu Sans")
-ax.text(0.55, 8.2, "Two questions. Cross them and four situations fall out.", fontsize=13.5, color=GRAY, family="DejaVu Sans")
+ax.text(0.55, 8.65, "Is AI seat usage tied to a checked outcome yet?", fontsize=25, fontweight="bold", color=INK, family="DejaVu Sans")
+ax.text(0.55, 8.2, "Two questions. Cross them and four situations fall out, none a mistake by default.", fontsize=13.5, color=GRAY, family="DejaVu Sans")
 
 
 def card(x, y, w, h, fc=CARD, ec=BORDER, lw=1.2, accent=None):
@@ -49,31 +48,31 @@ ax.text(0.55, card_top - row_h - row_gap - row_h / 2, "Opens it\nconstantly", fo
 ax.text(0.55, card_top - row_h - row_gap - row_h / 2 - 0.5, "(the heavy user)", fontsize=9.5, color=GRAY, ha="left", va="center", family="DejaVu Sans")
 
 # column headers
-ax.text(grid_x + col_w / 2, grid_top + 0.32, "No proven value", fontsize=12.5, fontweight="bold", color=INK, ha="center", family="DejaVu Sans")
-ax.text(grid_x + col_w / 2, grid_top - 0.05, "nobody checked the output against an outcome", fontsize=9.5, color=GRAY, ha="center", family="DejaVu Sans")
+ax.text(grid_x + col_w / 2, grid_top + 0.32, "Outcome not checked yet", fontsize=12.5, fontweight="bold", color=INK, ha="center", family="DejaVu Sans")
+ax.text(grid_x + col_w / 2, grid_top - 0.05, "no one has tied the output to a result yet", fontsize=9.5, color=GRAY, ha="center", family="DejaVu Sans")
 
-ax.text(grid_x + col_w + col_gap + col_w / 2, grid_top + 0.32, "Proven value", fontsize=12.5, fontweight="bold", color=INK, ha="center", family="DejaVu Sans")
+ax.text(grid_x + col_w + col_gap + col_w / 2, grid_top + 0.32, "Outcome checked", fontsize=12.5, fontweight="bold", color=INK, ha="center", family="DejaVu Sans")
 ax.text(grid_x + col_w + col_gap + col_w / 2, grid_top - 0.05, "tied to a margin, an error rate, a deadline held", fontsize=9.5, color=GRAY, ha="center", family="DejaVu Sans")
 
 cells = [
     {
-        "x": grid_x, "y": card_top - row_h, "title": "Shelfware",
-        "body": "The seat nobody checks.\nPaid for either way. The\nlicense fee is the only\nfact anyone has.",
+        "x": grid_x, "y": card_top - row_h, "title": "Early stage",
+        "body": "Seat exists, use is light\nso far. Paid for either\nway, and often just a\nquestion of time.",
         "accent": GRAY, "titlecolor": GRAY,
     },
     {
-        "x": grid_x + col_w + col_gap, "y": card_top - row_h, "title": "The efficient specialist",
+        "x": grid_x + col_w + col_gap, "y": card_top - row_h, "title": "Efficient adopter",
         "body": "Uses it for one task, gets\nit right, moves on. What\nan activation dashboard\nmisses entirely.",
         "accent": GREEN_DARK, "titlecolor": GREEN_DARK,
     },
     {
-        "x": grid_x, "y": card_top - 2 * row_h - row_gap, "title": "Token theater",
-        "body": "Volume with no check on\nthe output. More logins,\nno more value: the\nGoodhart trap in action.",
-        "accent": RED, "titlecolor": RED,
+        "x": grid_x, "y": card_top - 2 * row_h - row_gap, "title": "Unverified volume",
+        "body": "Heavy use, no check yet on\nthe output. Worth a look,\nnot necessarily a problem:\nthe measurement may just\nbe missing.",
+        "accent": "#8A6D1F", "titlecolor": "#8A6D1F",
     },
     {
-        "x": grid_x + col_w + col_gap, "y": card_top - 2 * row_h - row_gap, "title": "The real win",
-        "body": "Heavy use tied to a\nmeasured outcome. Rare,\nand the one combination\nworth building toward.",
+        "x": grid_x + col_w + col_gap, "y": card_top - 2 * row_h - row_gap, "title": "Verified value",
+        "body": "Heavy use tied to a\nmeasured outcome. The\ncombination worth\nbuilding toward.",
         "accent": GREEN, "titlecolor": GREEN,
     },
 ]
