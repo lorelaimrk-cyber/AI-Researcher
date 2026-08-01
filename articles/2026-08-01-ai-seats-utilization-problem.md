@@ -7,9 +7,9 @@ prediction_logged: no
 
 # AI Seats and the Utilization Problem
 
-Half the staff at a typical AEC or consulting firm never open the AI tool they were given. A
-smaller group treats the monthly token quota like a scoreboard. Neither number tells a partner
-whether the work got better.
+At a typical company that has bought AI seats, a large share of the people holding one rarely
+open it, while a smaller group treats the monthly token quota like a scoreboard. Neither number
+tells a partner whether the work got better.
 
 ## The claim
 
@@ -21,13 +21,20 @@ deliverable that got better, and most firms are only tracking the one that is ea
 
 ## What happened
 
-Microsoft and LinkedIn's 2024 Work Trend Index found that 78 percent of AI users bring their
-own AI tools to work rather than wait for an employer rollout, rising to 85 percent among Gen Z
-employees ([Microsoft WorkLab](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part)).
-The tool shows up in a person's workflow long before it shows up on a firm's licensing
-spreadsheet. By the time the firm buys an official seat, adoption already looks uneven: some
-people have been running the tool for a year, others are opening it for the first time because
-IT sent a reminder email.
+A 2026 enterprise adoption analysis by
+[ValueAdd VC](https://valueaddvc.com/blog/microsoft-copilot-enterprise-adoption-what-the-data-shows-about-real-usage-vs-hype),
+citing Gartner and Forrester survey data, puts weekly active use of purchased Copilot seats at
+20 to 30 percent, with daily use often under 40 percent even at firms that committed to
+enterprise wide rollouts. That figure is a secondary compilation rather than a named primary
+report, so treat the exact percentage as directional, not precise.
+
+It matches the general shape of a stronger, primary number. Microsoft and LinkedIn's 2024 Work
+Trend Index found that 78 percent of AI users bring their own AI tools to work rather than wait
+for an employer rollout, rising to 85 percent among Gen Z employees
+([Microsoft WorkLab](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part)).
+Read together, the two studies describe the same uneven start: some staff have been running AI
+on their own for a year before a firm ever buys them an official seat, and once that seat
+exists, a large share of the people holding one rarely open it.
 
 The opposite pattern shows up further along the same curve. IntuitionLabs tracked a developer
 named Harika Yenuga who burned through 200,000 tokens in twenty minutes on a single session,
