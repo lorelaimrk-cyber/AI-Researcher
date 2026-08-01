@@ -1,11 +1,11 @@
 ---
 date: 2026-08-01
 pillar: economics
-title: AI Seats Are Becoming the New Billable Hour
+title: AI Seats and the Utilization Problem
 prediction_logged: no
 ---
 
-# AI Seats Are Becoming the New Billable Hour
+# AI Seats and the Utilization Problem
 
 Half the staff at a typical AEC or consulting firm never open the AI tool they were given. A
 smaller group treats the monthly token quota like a scoreboard. Neither number tells a partner
@@ -56,6 +56,17 @@ the anthropologist Marilyn Strathern, not by Goodhart himself, but the mechanism
 seat logins as the success metric, and a firm will get more seat logins. It has no built in
 reason to also get better work.
 
+Cross how often a seat gets opened against whether anyone has checked its output against an
+outcome, and four situations fall out.
+
+![Are you buying activation, or are you buying value? A 2x2 matrix crossing how often a seat gets opened against whether its output has been checked against an outcome: shelfware, the efficient specialist, token theater, and the real win.](../assets/activation-value-matrix.png)
+
+The two boxes that get discussed are the two boxes that create no confusion: shelfware is a
+budget conversation, and the real win is the case everyone is chasing. The two that actually
+decide how a firm spends its year are the quiet ones either side, the specialist whose light
+touch already works and never shows up as a success story, and the token theater box, which
+looks identical to the real win on every dashboard that only counts logins.
+
 ## The benefit case
 
 A firm that measures the outcome instead of the login gets two different populations to learn
@@ -101,6 +112,9 @@ explain in a budget meeting.
 <!--
 Author note, delete before publishing:
 - Add one specific detail only Lorela would know where [YOUR DETAIL HERE] sits above.
+- Framework image generated at assets/activation-value-matrix.png via
+  scripts/make_activation_value_matrix.py, same palette as the tokenomics, IP matrix, and speed
+  premium assets.
 - Maister's profitability formula and billable hour critique are drawn from a secondary summary
   of "Managing the Professional Service Firm" (https://tylerdevries.com/book-summaries/managing-the-professional-service-firm/),
   not the original text directly; flag this if it matters for the final review pass.
