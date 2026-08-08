@@ -23,7 +23,9 @@ I'm not telling you this to make myself look bad. A few months ago I got the exa
 
 I was listening to a podcast about quantum computing, specifically about the risk it poses to cryptography. Same feeling as Bled. Far away. Like it belonged to some other decade, not mine.
 
-Except this time I didn't want to wait another four years to find out if my instinct was wrong again. I went and researched it. Here's what I found.
+Except this time I didn't want to wait another four years to find out if my instinct was wrong again, so I went and researched it.
+
+A quick, honest explanation first, since I had to look this up myself before any of the rest of it made sense to me. A normal computer stores information as bits, each one a plain 0 or 1. A quantum computer uses qubits, which can hold a mix of 0 and 1 at once, and can be linked together so that changing one instantly affects the others. That lets it explore many possible answers to a problem at the same time instead of checking them one by one. It isn't simply a faster laptop. It's a different way of searching for an answer, and it mainly helps with problems where the number of possible answers explodes as the problem grows, like the fastest route through a city's traffic, or the best layout for material inside a beam.
 
 There's a name for the moment a quantum computer becomes powerful enough to break the encryption the internet runs on. People call it Q Day. Nobody knows exactly when it lands. But some of the people closest to the problem have started putting real dates on their own preparation, and that's what caught my attention.
 
@@ -33,29 +35,33 @@ The reasoning has nothing to do with when a working machine actually shows up. S
 
 Craig Gidney, a researcher at Google, published a paper on [arXiv](https://arxiv.org/abs/2505.15917) in May 2025. It showed that a quantum computer with fewer than a million noisy qubits could factor a 2048 bit RSA key in under a week. Back in 2019, his own estimate for that job was about 20 million qubits. That's roughly a twenty times drop in six years. That's the wrong direction if you're the one relying on that encryption.
 
-[NIST](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards) finalized its first three post quantum encryption standards on August 13, 2024. It didn't attach a firm cutoff date. What it said instead was simple. Start migrating now. Don't wait for one.
+[NIST](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards) finalized its first three post quantum encryption standards on August 13, 2024. It didn't attach a firm cutoff date. What it said instead was simple: start migrating now, rather than wait for one to be set.
 
 I work in this industry, and I don't want to hand you a scare piece.
 
-Most AEC firms, the architecture, engineering, and construction industry, aren't defense contractors or banks. Nobody is telling a mid sized structural engineering firm to migrate its systems by a fixed date. Not yet. That's a real reason not to panic about this on a Monday morning. I still wouldn't wait for a client or an insurer to force the question.
+Most of us in engineering aren't defense contractors or banks. Nobody is telling an engineering firm to migrate its systems by a fixed date. Not yet. That's a real reason not to panic about this on a Monday morning. I still wouldn't wait for a client or an insurer to force the question.
 
-The exposure starts the moment a capable quantum computer exists, whenever that turns out to be. That's what actually convinced me this matters, even for a firm like mine. Call that one clock. A separate, slower clock governs when quantum computers get good enough to actually be useful for engineering work. The risk clock starts ticking well before the usefulness clock does. I keep coming back to that. Not the exact year. The order things happen in.
+The exposure starts the moment a capable quantum computer exists, whenever that turns out to be. That's what actually convinced me this matters, even for someone like me. Call that one clock. A separate, slower clock governs when quantum computers get good enough to actually be useful for engineering work itself. The risk clock starts ticking well before the usefulness clock does. It's the order things happen in, not the exact year, that I keep coming back to.
 
 *The cryptography risk is the one keeping me up. The building side of this is slower, and just as interesting.*
 
+This part isn't really about firms protecting old files anymore. It's about what quantum computing might eventually let us design, build, and fix in the physical world around us: the roads we drive on, the bridges we cross, the materials our buildings are made of.
+
 A 2024 review of quantum computing in civil engineering, published on [arXiv](https://arxiv.org/html/2402.14556v1), looked at where the real potential sits. Three places, mainly: optimization problems like construction scheduling and structural sizing, machine learning for structural health monitoring, and simulation for finite element analysis.
 
-Then the same review said the honest part out loud. Today's quantum hardware is still what people call NISQ. Noisy. No error correction yet. A problem at the scale of an actual bridge or building could need millions of qubits and a fault tolerant machine that doesn't exist yet.
+Then the same review said the honest part out loud. Today's quantum hardware is still what people call NISQ, noisy and without error correction yet. A problem at the scale of an actual bridge or building could need millions of qubits and a fault tolerant machine that doesn't exist yet.
 
-There is something real to point to, and it didn't stay in a lab. [Volkswagen Group](https://www.volkswagen-group.com/en/press-releases/volkswagen-optimizes-traffic-flow-with-quantum-computers-16995) ran the pilot that convinced me of that. During Web Summit in Lisbon in November 2019, nine public buses run by the transit operator Carris used a routing system built on a D-Wave quantum computer to calculate near real time paths through city traffic. Volkswagen had already tried something similar on taxis in Beijing back in 2016. Real buses, real streets. Small in scope. Still real.
+There is something real to point to, and it didn't stay in a lab. [Volkswagen Group](https://www.volkswagen-group.com/en/press-releases/volkswagen-optimizes-traffic-flow-with-quantum-computers-16995) ran the pilot that convinced me of that. During Web Summit in Lisbon in November 2019, nine public buses run by the transit operator Carris used a routing system built on a D-Wave quantum computer to calculate near real time paths through city traffic. Volkswagen had already tried something similar on taxis in Beijing back in 2016. Real buses on real streets, small in scope, still real.
 
 Closer to my own field, three researchers, Zisheng Ye, Xiaoping Qian, and Wenxiao Pan, took on a classic structural optimization problem: finding the layout of material in a structure that minimizes how much it flexes under load. They split it in two, solved the larger part on a normal computer, and the smaller part on a D-Wave quantum annealer. According to [arXiv, Ye, Qian, and Pan](https://arxiv.org/abs/2301.11531), the hybrid method matched or beat standard classical methods on the test problems they ran. I want to be careful here. That's a narrow, self reported result on small test cases. It's not proof that quantum computing beats good structural software on a real building. Still, someone actually ran the test and got a real number back.
 
-There's a materials angle too, and it's the one that made me sit up. [Quantinuum](https://www.quantinuum.com/blog/on-the-arxiv-modeling-carbon-capture-with-quantum-computing)'s researchers have used quantum simulation to model how metal organic frameworks, a class of material being actively researched for carbon capture, bind carbon dioxide molecules. Cement alone accounts for around 8 percent of global CO2 emissions, and a large share of that comes from the chemistry itself, the calcination process, according to [Chatham House](https://www.chathamhouse.org/2018/06/making-concrete-change-innovation-low-carbon-cement-and-concrete). If quantum simulation ever helps someone design a material that pulls that carbon out more cheaply, that's a story about what we build things out of, not about cybersecurity.
+There's a materials angle too, and it's the one that made me sit up. [Quantinuum](https://www.quantinuum.com/blog/on-the-arxiv-modeling-carbon-capture-with-quantum-computing)'s researchers have used quantum simulation to model how metal organic frameworks, a class of material being actively researched for carbon capture, bind carbon dioxide molecules. Cement alone accounts for around 8 percent of global CO2 emissions, and a large share of that comes from the chemistry itself, the calcination process, according to [Chatham House](https://www.chathamhouse.org/2018/06/making-concrete-change-innovation-low-carbon-cement-and-concrete). If quantum simulation ever helps someone design a material that pulls that carbon out more cheaply, that's a story about what we build things out of.
 
-Where does that leave me. Honestly, in two different places at once.
+![Three engineering problems already being tested against quantum computers: routing traffic in Lisbon with Volkswagen and D-Wave, designing structures with a hybrid classical and quantum annealer, and capturing carbon with Quantinuum's simulation of how metal organic frameworks bind CO2. All three are small scale results, not yet faster than classical software.](../assets/quantum-engineering-cases.png)
 
-I'm fairly confident about the cryptography risk. The math keeps moving one direction. Gidney's number keeps dropping. A company as careful as Google doesn't put a public date on something it isn't taking seriously. I don't know exactly when Q Day arrives. Nobody does. I don't think that's actually the question that matters most. What matters is whether your data is being copied today for someone to open later, once the machine exists to do it.
+That leaves me in two different places at once.
+
+I'm fairly confident about the cryptography risk. The math keeps moving one direction. Gidney's number keeps dropping. A company as careful as Google doesn't put a public date on something it isn't taking seriously. I don't know exactly when Q Day arrives. Nobody does. What matters more is whether your data is being copied today for someone to open later, once the machine exists to do it.
 
 I honestly don't know yet whether the engineering case holds up. The hardware just isn't there. The buses in Lisbon and the beam problem Ye, Qian, and Pan solved are real, but they're small. Small signals take years to grow into something a project team would actually use.
 
@@ -63,11 +69,7 @@ Here's the one prediction I'll put my name on, dated, so you can check it yourse
 
 *What I'm watching now.*
 
-Two clocks, moving at very different speeds.
-
-![The four year gap: a timeline from the 2018 Bled Strategic Forum through ChatGPT's November 2022 launch, today's podcast moment, a December 2027 prediction, and Google's 2029 deadline to protect its systems from a capable quantum computer.](../assets/four-year-gap-timeline.png)
-
-The fast one: whether any AEC firm follows Google's lead and puts an actual date on post quantum migration, instead of folding it into a vague paragraph about cybersecurity. That's the tell I'm looking for.
+Two clocks, moving at very different speeds. On the fast one, I'm watching whether any engineering firm follows Google's lead and puts an actual date on post quantum migration, instead of folding it into a vague paragraph about cybersecurity. That's the tell I'm looking for.
 
 Then there's the slower signal. I want to see whether quantum structural optimization work, like Ye, Qian, and Pan's, starts showing up on problems closer to the size of a real project instead of small test cases. If it does, the slow timeline is starting to compress too, the way the fast one did after Bled.
 
@@ -93,10 +95,26 @@ Author note, delete before publishing:
   up"), a dated and checkable prediction, and a forward looking close. There is no boxed
   "throughline" blockquote; the closing line ("I was wrong once... I'd rather not be wrong
   twice.") is doing that job narratively instead.
-- Added the timeline graphic you asked for: assets/four-year-gap-timeline.png, built with
-  scripts/make_four_year_gap_timeline.py to match this repo's existing chart style (same
-  palette and fonts as the other issues' charts). Placed it at the "two clocks" turn near the
-  end, where it recaps the whole story at a glance right before the closing line.
+- Added, then replaced, the graphic. The first version was a timeline (assets/four-year-gap-timeline.png), which you said didn't say anything concrete. Swapped it for
+  assets/quantum-engineering-cases.png (built by scripts/make_quantum_engineering_cases.py),
+  three cards laying out the actual problem, where it was tried, and its status today for the
+  three real cases the piece already describes: traffic routing, structural design, and carbon
+  capture materials. Placed right after those three cases are described in the text, as a
+  recap with real content in it. The old timeline script and image are still in the repo
+  (assets/four-year-gap-timeline.png, scripts/make_four_year_gap_timeline.py) in case you want
+  them for something else, just no longer referenced in this issue.
+- Added a plain paragraph explaining what a quantum computer actually is, in the same voice as
+  the rest of the piece (bits versus qubits, why it searches many answers at once), right after
+  the "I went and researched it" line, since the piece used to assume the reader already knew.
+- Pulled back the AEC framing per your note. Cut "AEC" as an acronym and the "architecture,
+  engineering, and construction industry" business language, and added one sentence right after
+  the cryptography section turns toward the engineering side ("This part isn't really about
+  firms protecting old files anymore...") to open the piece up to what quantum computing could
+  mean more broadly, while keeping the actual examples anchored in engineering, per your
+  request. The one place a specific company list still appears is the dated prediction itself
+  (Arup, AECOM, Jacobs, WSP, Stantec, Mott MacDonald, Ramboll), since a falsifiable prediction
+  needs concrete, checkable names; I softened "top 20 by revenue" to "big global engineering
+  and construction firms" there in the previous pass already.
 - I caught and fixed one internal slip that survived the rewrite pipeline: an earlier line said
   "wait five years" to find out about quantum computing, which contradicted the "four years"
   established at the top of the piece (Bled 2018 to ChatGPT's November 2022 launch). Fixed to
@@ -116,6 +134,16 @@ Author note, delete before publishing:
   taxi detail sharing a link with the 2019 Lisbon pilot, I had already verified directly earlier
   in this session: the same Volkswagen press release states both facts, so no change was needed
   there, just something neither cold reader could confirm without web access.
+- Also ran a fresh detection pass against the "no-ai-slop" rubric you shared, on a separate
+  cold read of this piece specifically. It flagged a few more patterns I hadn't caught yet:
+  four instances of choppy fragment-stacking for punch ("Not a little wrong. Wrong in a way
+  that..."), three "not X" constructions that could just state the claim directly, one
+  self-answered question, one leftover "here's what I found" throat-clear, and one colon-reveal
+  ("The fast one: whether..."). Fixed all of them; kept one instance of fragment-stacking
+  (the "Not a little wrong" line) since it's doing real work early in the piece and the skill's
+  own instruction is to make the minimum effective edit, not flatten every instance of a device
+  just because it recurs. Also left the closing line and the three italicized scene breaks as
+  is; they're the piece's actual structural device now that "##" headers are gone, not filler.
 - The pillar tag ("risk") and the note that this issue sits further from the newsletter's usual
   AI and pricing thesis than most issues still stands from the previous draft; that editorial
   call has not changed, only the writing has.
