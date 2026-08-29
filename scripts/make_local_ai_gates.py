@@ -17,8 +17,8 @@ ax.set_xlim(0, 14.4)
 ax.set_ylim(0, 8.3)
 ax.axis("off")
 
-ax.text(0.55, 7.85, "Three gates on running AI in house", fontsize=24, fontweight="bold", color=INK, family="DejaVu Sans")
-ax.text(0.55, 7.42, "Independent tests. One closing is enough to decide it. Checked against 2026 figures.", fontsize=13, color=GRAY, family="DejaVu Sans")
+ax.text(0.55, 7.85, "Three preconditions for running AI in house", fontsize=24, fontweight="bold", color=INK, family="DejaVu Sans")
+ax.text(0.55, 7.42, "Independent of each other. One is enough to decide it. Checked against 2026 figures.", fontsize=13, color=GRAY, family="DejaVu Sans")
 
 card_w = 4.2
 card_h = 6.15
@@ -31,8 +31,8 @@ cards = [
         "title": "1. Obligation",
         "accent": GREEN_DARK,
         "q": "Does a contract or a\nregulation already fix\nwhere data may go?",
-        "detail": "CUI carries handling rules\nunder 32 CFR Part 2002.\nITAR restricts transfer to\nforeign nationals. Project\ncontracts increasingly\nname AI processing terms.",
-        "verdict": "If yes, the gate is\nshut. Nothing below\nthis matters.",
+        "detail": "EU: whose law reaches it.\nSchrems II plus the CLOUD\nAct. Residency is not\ncontrol of the stack.\nUS: who may see it. ITAR,\nCUI under 32 CFR 2002.\nChina: whether it may\nleave. PIPL, three routes.",
+        "verdict": "If yes, this one is\nsettled. Nothing\nbelow it matters.",
     },
     {
         "title": "2. Volume",
@@ -68,14 +68,14 @@ for i, c in enumerate(cards):
             fontstyle="italic", family="DejaVu Sans")
 
     ax.text(tx, ty - 1.95, "WHAT DECIDES IT", fontsize=9, fontweight="bold", color=GRAY, family="DejaVu Sans")
-    ax.text(tx, ty - 2.25, c["detail"], fontsize=10.4, color=INK, va="top", linespacing=1.5, family="DejaVu Sans")
+    ax.text(tx, ty - 2.25, c["detail"], fontsize=10.0, color=INK, va="top", linespacing=1.45, family="DejaVu Sans")
 
     ax.plot([tx, x + card_w - 0.4], [y0 + 1.35, y0 + 1.35], color=BORDER, linewidth=1.0)
     ax.text(tx, y0 + 1.1, "THE CATCH", fontsize=9, fontweight="bold", color=c["accent"], family="DejaVu Sans")
     ax.text(tx, y0 + 0.8, c["verdict"], fontsize=10.4, color=INK, va="top", linespacing=1.5, family="DejaVu Sans")
 
 ax.text(0.55, 0.15,
-        "Sources: 32 CFR Part 2002 and ITAR; Alpacked self-hosted LLM guide (Aug 2026); Fastino open-weight comparison (Jul 2026). Cost figures are practitioner estimates, not audited.",
+        "Sources: Schrems II and the US CLOUD Act; 32 CFR Part 2002 and ITAR; China's PIPL; Alpacked self-hosted LLM guide (Aug 2026); Fastino open-weight comparison (Jul 2026). Cost figures are practitioner estimates, not audited.",
         fontsize=8.7, color=GRAY, family="DejaVu Sans")
 
 plt.tight_layout()
