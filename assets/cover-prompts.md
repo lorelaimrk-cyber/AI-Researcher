@@ -21,10 +21,46 @@ Palette (same constants used by every `scripts/make_*.py`):
 Standard negative prompt:
 
 ```
-glowing neon, blue cyberspace, circuit board patterns, holograms, robots,
-humanoid AI, brain imagery, binary digits, lens flare, photorealism,
-3D render, dark background, purple, cyan, text, lettering, watermark
+title block, drawing sheet, blueprint sheet, legend, key, callouts,
+annotations, labels, dimension lines, specifications, technical diagram,
+schematic, isometric drawing, tables, panels of text, text, lettering,
+numbers, watermark, glowing neon, blue cyberspace, circuit patterns,
+holograms, robots, humanoid AI, brain imagery, binary digits, lens flare,
+3D render, photorealism, dark background, purple, cyan
 ```
+
+## Size
+
+LinkedIn article cover is **1200 x 644** (about 1.86:1). Substack post cover
+is **1200 x 630**. Near enough that one generation serves both.
+
+Image generators respect aspect ratio but almost never the pixel size you
+type, so set the tool's own ratio control to **1.91:1** or **16:9**, whichever
+it offers, then fix the exact pixels afterwards:
+
+```
+python scripts/make_cover.py raw-generation.png assets/2026-09-05-cover.png
+python scripts/make_cover.py raw-generation.png --substack
+python scripts/make_cover.py raw-generation.png --anchor top
+```
+
+It centre-crops to the right ratio then resizes, so nothing gets squashed.
+Use `--anchor` when the subject sits off centre.
+
+## Two failure modes, both seen
+
+1. **Describing a drawing sheet gets you a drawing sheet.** The first attempt
+   asked for "the density of a real engineering drawing sheet" and returned a
+   full technical document with a title block and a legend panel. A cover is a
+   magazine graphic, not a document. Say so explicitly.
+2. **Words implying labels produce fake text.** "Annotation blocks",
+   "dimension strings", "specifications" and "callouts" all make a model spray
+   garbled lettering across the image, no matter how firmly the prompt says no
+   text. Keep them out of the positive prompt entirely.
+
+Density on a cover comes from depth, soft background shapes and paper grain.
+It never comes from more information. The image has to survive being seen at
+thumbnail size in a feed.
 
 ---
 
@@ -32,49 +68,48 @@ humanoid AI, brain imagery, binary digits, lens flare, photorealism,
 
 Subject: local AI, data governance, the boundary data does not cross.
 
+Set the generator's aspect ratio to 1.91:1 or 16:9, then run the result
+through `scripts/make_cover.py`.
+
 ```
-Rich editorial illustration for an engineering business publication, in the
-style of a detailed technical drawing rendered as flat vector art.
+Editorial cover illustration for a business article, in the style of a
+modern magazine cover graphic. Wide landscape banner, aspect ratio 1.91:1.
 
-Scene: a server rack, drawn in careful detail with individual units, vents,
-patch panels and neatly routed cabling, stands inside a boundary drawn like
-a surveyed property line on an architect's site plan, a precise closed
-rectangle with tick marks, corner markers and small dimension arrows along
-its edges. Around and beneath it, a dense architectural underlay fills the
-frame: overlapping floor plans, elevation drawings, grid lines, section
-marks, hatching, contour lines and small annotation blocks, layered like
-several drawings stacked on a light table. Outside the boundary, a network
-of thin routing lines and connection nodes travels across the sheet from
-the edges of the frame, converging on the boundary and terminating cleanly
-at it, none crossing over.
+One dominant subject, large and centred slightly right: a single server
+cabinet as a bold simplified geometric form in deep green, with just
+enough shading on its side faces to read as solid and three-dimensional.
+Around its base, a wide flat plane suggesting a floor, in warm stone tone.
+A single confident boundary line encircles the cabinet on that plane,
+clearly closed. From the outer edges of the frame, four or five thick soft
+lines sweep inward toward the cabinet and stop short at the boundary, none
+crossing it.
 
-Style: flat vector, precise draughtsman linework, layered and detailed
-rather than sparse, subtle paper grain, gentle tonal panels behind sections
-of the drawing to create depth. No gradients on objects, no glow, no 3D
-lighting. Dense but organised, the density of a real engineering drawing
-sheet, not clutter.
+Background: large soft overlapping geometric shapes in muted paper tones,
+suggesting architectural plan forms abstractly, heavily blurred and very
+low contrast, working as texture and depth only. Subtle paper grain across
+the whole image. Warm, calm, confident.
 
-Composition: landscape 1200 x 630. Detail runs edge to edge, with one
-calmer tonal panel in the left third where a headline can sit.
+Style: bold flat editorial illustration with soft depth. Simple shapes at
+large scale. Must read clearly as a thumbnail. Rich and warm rather than
+sparse, but with few distinct elements.
 
-Colour, use only these: warm off-white paper #F2EFE7, panel tone #EAE6DB,
-drawing underlay and rules #D9D4C6, dark linework #1F2A24, grey annotation
-detail #6B6F66, deep green #1F4E33 for the server rack, mid green #2F6B47
-for the boundary line, warm stone #8C8272 for the external routing lines
-that stop at the boundary.
+Colour, use only these: warm off-white #F2EFE7, panel tone #EAE6DB, soft
+rules #D9D4C6, dark ink #1F2A24, grey #6B6F66, deep green #1F4E33 for the
+cabinet, mid green #2F6B47 for the boundary line, warm stone #8C8272 for
+the inward sweeping lines.
 
-No text, no lettering, no numbers, no logos.
+Left third kept calm and uncluttered for a headline overlay.
 ```
 
-Note: the routing lines stopping at the boundary carry the whole argument.
-If a generation loses that, regenerate rather than accept it.
+Note: the lines stopping at the boundary carry the whole argument. If a
+generation loses that, regenerate rather than accept it.
 
 ### Variants
 
-- **Warmer, less diagrammatic.** Overhead view of a drafting table: rolled
-  drawings, a scale rule, a coffee cup, weighted-down plan sheets, and a
-  single compact server unit sitting on the sheet inside a drawn boundary.
-  Same palette, same flat vector treatment, more physical objects.
-- **Fuller architectural.** Drop the rack to a small solid green form and
-  let the layered site plan carry the frame, with the boundary and the
-  terminating routing lines as the only accented elements.
+- **Warmer, more physical.** Overhead view of a drafting table: rolled
+  drawings, a scale rule, weighted-down plan sheets, and one compact server
+  unit sitting inside a drawn boundary. Same palette, same flat treatment,
+  real objects instead of abstract shapes.
+- **Quieter.** Drop the cabinet to a small solid green form and let the soft
+  background plan shapes carry the frame, with the boundary and the
+  terminating lines as the only accented elements.
