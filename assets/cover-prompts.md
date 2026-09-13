@@ -113,3 +113,59 @@ generation loses that, regenerate rather than accept it.
 - **Quieter.** Drop the cabinet to a small solid green form and let the soft
   background plan shapes carry the frame, with the boundary and the
   terminating lines as the only accented elements.
+
+---
+
+## 2026-09-19, Nobody Banned the Car
+
+Subject: the car kept running while the rules landed on the driver, the plate and the border.
+
+Set the generator's aspect ratio to 1.91:1 or 16:9, then run the result
+through `scripts/make_cover.py`. No frame or border around the image; the
+illustration runs to the edges.
+
+```
+Editorial cover illustration for a business article, in the style of a
+modern magazine cover graphic. Wide landscape banner, aspect ratio 1.91:1.
+The illustration fills the whole canvas edge to edge, with no border, frame,
+margin or vignette.
+
+One dominant subject, large and placed in the right two thirds: a single
+early 1900s motor car, boxy and upright with large spoked wheels, as a bold
+simplified geometric form in deep green, with just enough shading on its
+side faces to read as solid. It sits on an open road drawn as a wide flat
+band in warm stone tone that runs from the bottom edge toward a low
+horizon. On the front of the car, one small blank rectangular plate in
+off-white, empty, no marks on it. Beside the road, a short row of three or
+four small round and triangular sign shapes on thin posts, in mid green,
+blank faces, receding with the road.
+
+Background: a broad low sky in paper tones with large soft overlapping
+shapes, blurred and very low contrast, suggesting distant hills and a few
+cloud forms, working as texture and depth only. Subtle paper grain across
+the whole image. Warm, calm, confident, with a sense of open distance
+ahead of the car.
+
+Style: bold flat editorial illustration with soft depth. Simple shapes at
+large scale, few distinct elements, but rich and warm rather than sparse.
+Must read clearly as a thumbnail.
+
+Colour, use only these: warm off-white #F2EFE7, panel tone #EAE6DB, soft
+rules #D9D4C6, dark ink #1F2A24, grey #6B6F66, deep green #1F4E33 for the
+car, mid green #2F6B47 for the sign shapes, warm stone #8C8272 for the
+road, alert red #B23A2E only as one small accent on a single sign face.
+
+Left third kept calm and uncluttered for a headline overlay.
+```
+
+Note: the plate has to stay blank. If a generation puts lettering on it or
+on the signs, regenerate. The road running off the edge is what says the
+factories never stopped; keep it open, no barrier, no gate.
+
+### Variants
+
+- **Closer and warmer.** Three quarter view of the car from the front, the
+  blank plate large and central, the signs reduced to one round shape at the
+  roadside.
+- **Quieter.** Car small on the horizon, the road band and the row of blank
+  signs carry the frame.
